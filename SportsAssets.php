@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 class SportsAssets extends AssetBundle
 {
     public $basePath = '@webroot';
-    public $sourcePath = '@web/assets';
+    public $baseUrl = '@web/assets';
 
     public $css = [
         'css/main.css',
