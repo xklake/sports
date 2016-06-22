@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-\frontend\assets\SportsAssets::register($this);
+frontend\web\template\sports\SportsAssets::register($this);
 
 
 if(!isset(Yii::$app->params['keywords'])){
