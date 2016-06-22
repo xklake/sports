@@ -6,7 +6,7 @@
  * Time: 3:40 PM
  */
 
-namespace frontend\assets;
+namespace frontend\web\template\sports;
 use yii\web\AssetBundle;
 
 
