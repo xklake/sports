@@ -7,13 +7,9 @@ use yii\helpers\Html;
 frontend\web\template\sports\SportsAssets::register($this);
 
 
-if(!isset(Yii::$app->params['keywords'])){
-    Yii::$app->params['keywords'] = Yii::$app->setting->get('siteName');
-}
+Yii::$app->params['keywords'] = Yii::$app->setting->get('siteKeyword') .','. Yii::$app->setting->get('siteName');
 
-if(!isset(Yii::$app->params['description'])){
-    Yii::$app->params['description'] = Yii::$app->setting->get('siteName');
-}
+Yii::$app->params['description'] = Yii::$app->setting->get('siteName');
 
 if(!isset(Yii::$app->params['title'])){
     Yii::$app->params['title'] = Yii::$app->setting->get('siteName');
@@ -34,6 +30,7 @@ if(!isset(Yii::$app->params['title'])){
     <meta name="description" content="<?= Html::encode(Yii::$app->params['description']) ?>" />
     <meta name="author" content="Panda blog Team" />
     <meta name="Copyright" content="Panda blog" />
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode(Yii::$app->params['title']) ?></title>

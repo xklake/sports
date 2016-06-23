@@ -14,7 +14,7 @@
 	<div class="container-full text-center">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<?php
-				$banners = Yii::$app->getImageByGroup(1);
+				$banners = Yii::$app->getImageByGroup('Banner');
 			?>
 
 			<!-- Indicators -->
@@ -66,16 +66,6 @@
 				}
 				?>
 			</div>
-
-			<!-- Left and right controls -->
-			<!--a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span-->
-			</a>
 		</div>
 	</div>
 
@@ -93,7 +83,7 @@
 			<h3 class="text-center thin"><strong><?=Yii::$app->getTextBlock('home-coaching-title')->content?></strong></h3>
 
 			<div class="row">
-				<?php $coaching = Yii::$app->controller->getCoaching(16, 3);
+				<?php $coaching = Yii::$app->controller->getProducts(16, 3);
 					foreach($coaching as $item) { ?>
 						<div class="col-md-4 col-sm-12 highlight">
 							<div class="h-caption">

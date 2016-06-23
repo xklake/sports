@@ -8,7 +8,7 @@
 
 $posts = Yii::$app->controller->getRecentPosts();
 //$coaching = Yii::$app->params['coaching'];
-$coaching = Yii::$app->controller->getCoaching(16);
+$coaching = Yii::$app->controller->getProducts(16);
 ?>
 
 <aside class="col-md-4 sidebar sidebar-right">

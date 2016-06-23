@@ -55,9 +55,7 @@ if(!isset(Yii::$app->params['title'])){
         <!-- /Article -->
 
         <!-- Sidebar -->
-        <aside class="col-sm-4 sidebar sidebar-right">
-            <?php echo($this->render('/contactdetail')) ?>
-        </aside>
+            <?php echo($this->render('recentpost')) ?>
         <!-- /Sidebar -->
 
     </div>
