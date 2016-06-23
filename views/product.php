@@ -6,7 +6,6 @@
  * Time: 5:02 PM
  */
 
-$this->title = ' Blog Center - ' . Yii::$app->setting->get('siteName');
 
 ?>
 

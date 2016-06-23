@@ -6,13 +6,6 @@
  * Time: 12:01 PM
  */
 
-Yii::$app->controller->layout = 'product';
-
-$this->title = $product->name . ' - ' .Yii::$app->setting->get('siteName');
-Yii::$app->params['keywords'] = $product->keywords != null? $product->keywords . ' - ' . Yii::$app->setting->get('siteName'):Yii::$app->setting->get('siteName');
-
-Yii::$app->params['description'] = $product->keywords != null? $product->description . ' - ' . Yii::$app->setting->get('siteName'):Yii::$app->setting->get('description');
-
 ?>
 
 
